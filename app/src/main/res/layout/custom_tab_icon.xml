@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/footerColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.bingoogolapple.badgeview.BGABadgeLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <cn.bingoogolapple.badgeview.BGABadgeFrameLayout
+            android:id="@+id/badgeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:badge_gravity="rightTop">
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/hot_normal"
+                android:scaleType="center"/>
+        </cn.bingoogolapple.badgeview.BGABadgeFrameLayout>
+    </cn.bingoogolapple.badgeview.BGABadgeLinearLayout>
+</RelativeLayout>

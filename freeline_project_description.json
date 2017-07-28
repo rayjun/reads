@@ -1,0 +1,108 @@
+{
+    "android_gradle_plugin_version": "2.3.1",
+    "apk_path": "/Users/ray/AndroidStudioProjects/readhub/app/build/outputs/apk/app-debug.apk",
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/ray/AndroidStudioProjects/readhub/app/build/freeline",
+    "build_directory": "/Users/ray/AndroidStudioProjects/readhub/app/build",
+    "build_script": "./gradlew :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/ray/Android/sdk/build-tools/25.0.2",
+    "build_tools_version": "25.0.2",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "/Users/ray/Android/sdk/platforms/android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "cn.rayjun.readhub",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/ray/AndroidStudioProjects/readhub",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home",
+    "launcher": "cn.rayjun.readhub.MainActivity",
+    "main_assets_directory": [
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/assets",
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/jniLibs",
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/main/jniLibs"
+    ],
+    "main_jni_directory": [
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/jni",
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/ray/AndroidStudioProjects/readhub/app/src/main/AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "/Users/ray/AndroidStudioProjects/readhub/app/build/generated/source/r/debug/R.java",
+    "main_res_directory": [
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/res",
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/java",
+        "/Users/ray/AndroidStudioProjects/readhub/app/src/main/java"
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "/Users/ray/AndroidStudioProjects/readhub/app"
+        }
+    ],
+    "package": "cn.rayjun.readhub",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/assets",
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/jniLibs",
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/jni",
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/ray/AndroidStudioProjects/readhub/app/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/res",
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/debug/java",
+                "/Users/ray/AndroidStudioProjects/readhub/app/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "root_dir": "/Users/ray/AndroidStudioProjects/readhub",
+    "sdk_directory": "/Users/ray/Android/sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}

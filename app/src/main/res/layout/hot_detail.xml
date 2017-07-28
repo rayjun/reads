@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="cn.rayjun.readhub.HotNewsDetailActivity">
+
+    <include layout="@layout/detail_header"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/news_detail_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/hot_news_detail_title_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:id="@+id/news_detail_time"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:id="@+id/news_detail_abstract"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/hot_news_detail_abstract_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_detail_list"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
