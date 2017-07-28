@@ -5,7 +5,7 @@
 这是初版，难免有些粗糙，欢迎提意见
 
 
-![](screenshot/1.jpg)
-![](screenshot/2.jpg)
-![](screenshot/3.jpg)
-![]( screenshot/4.jpg )
+![](https://github.com/rayjun/reads/blob/master/screenshot/1.png)
+![](https://github.com/rayjun/reads/blob/master/screenshot/2.png)
+![](https://github.com/rayjun/reads/blob/master/screenshot/3.png)
+![](https://github.com/rayjun/reads/blob/master/screenshot/4.png)
