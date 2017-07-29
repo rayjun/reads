@@ -123,19 +123,13 @@ public class HotFragment extends Fragment {
         hotNewsApi.getHotNews(params)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<HotNewsEntity>() {
-                    @Override
-                    public void accept(@NonNull HotNewsEntity hotNewsEntity) throws Exception {
-                        refreshNewsData(hotNewsEntity.getData());
-                        if(dialog != null && dialog.isShowing()) {
-                            dialog.dismiss();
-                        }
+                .subscribe((HotNewsEntity hotNewsEntity) -> {
+                    refreshNewsData(hotNewsEntity.getData());
+                    if(dialog != null && dialog.isShowing()) {
+                        dialog.dismiss();
                     }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(@NonNull Throwable throwable) throws Exception {
-                        Logger.e(throwable.getMessage());
-                    }
+                },(@NonNull Throwable throwable) -> {
+                    Logger.e(throwable.getMessage());
                 });
     }
 

@@ -57,7 +57,7 @@ public class NewsShowActivity extends Activity {
 
         dialog = new SweetAlertDialog(this, PROGRESS_TYPE);
         dialog.setTitleText("加载中...");
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
         dialog.show();
 
         back.setOnClickListener(new View.OnClickListener() {

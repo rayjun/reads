@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Callable;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -107,6 +108,7 @@ public class TechFragment extends Fragment {
             }
         });
 
+
         techAdapter = new TechAdapter();
         recyclerView.setAdapter(techAdapter);
 
@@ -125,20 +127,13 @@ public class TechFragment extends Fragment {
         techNewsApi.getTechNews(params)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<TechNewsEntity>() {
-                    @Override
-                    public void accept(@NonNull TechNewsEntity techNewsEntity) throws Exception {
-                        refreshNewsData(techNewsEntity.getData());
-
-                        if(dialog != null && dialog.isShowing()) {
-                            dialog.dismiss();
-                        }
+                .subscribe((TechNewsEntity techNewsEntity) -> {
+                    refreshNewsData(techNewsEntity.getData());
+                    if(dialog != null && dialog.isShowing()) {
+                        dialog.dismiss();
                     }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(@NonNull Throwable throwable) throws Exception {
-                        Logger.e(throwable.getMessage());
-                    }
+                }, (@NonNull Throwable throwable) -> {
+                    Logger.e(throwable.getMessage());
                 });
     }
 

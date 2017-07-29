@@ -129,19 +129,13 @@ public class DevFragment extends Fragment {
         devNewsApi.getDevNews(params)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<DevNewsEntity>() {
-                    @Override
-                    public void accept(@NonNull DevNewsEntity devNewsEntity) throws Exception {
-                        refreshNewsData(devNewsEntity.getData());
-                        if(dialog != null && dialog.isShowing()) {
-                            dialog.dismiss();
-                        }
+                .subscribe((DevNewsEntity devNewsEntity) -> {
+                    refreshNewsData(devNewsEntity.getData());
+                    if(dialog != null && dialog.isShowing()) {
+                        dialog.dismiss();
                     }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(@NonNull Throwable throwable) throws Exception {
-                        Logger.e(throwable.getMessage());
-                    }
+                }, (@NonNull Throwable throwable) -> {
+                    Logger.e(throwable.getMessage());
                 });
     }
 
